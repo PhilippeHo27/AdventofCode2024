@@ -1,5 +1,5 @@
 #include "pch.h"
-
+#include <regex>
 #include "../Utilities/Utilities.h"
 #include "PuzzleSolvers.h"
 
@@ -19,6 +19,24 @@ namespace Puzzle03A
 	{
 		auto input = ReadInput(inputFile);
 
-		std::cout << "Puzzle03A not yet solved!";
+		int answer = 0;
+
+		std::regex pattern("mul\\((\\d+),(\\d+)\\)");
+		std::smatch matches;
+
+		for (auto output : input)
+		{
+			std::string::const_iterator searchStart(output.cbegin());
+			while (std::regex_search(searchStart, output.cend(), matches, pattern))
+			{
+				int first_num = std::stoi(matches[1]);
+				int second_num = std::stoi(matches[2]);
+
+				answer += first_num * second_num;
+				//std::cout << first_num << " and " << second_num << std::endl;
+				searchStart = matches.suffix().first;
+			}
+		}
+		std::cout << answer << std::endl;
 	}
 } // namespace Puzzle03A

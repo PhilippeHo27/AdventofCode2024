@@ -22,6 +22,9 @@ namespace Utilities
 	// Parses comma-separated 32-bit integers.
 	std::vector<int> SplitCommaSeparatedInt32s(std::string_view input);
 
+	// Parses delimter-separated 32-bit integers.
+	std::vector<int> SplitLimiterSeparatedInt32s(std::string_view input, std::string_view delimiter);
+
 	// Parses comma-separated 64-bit integers.
 	std::vector<int64_t> SplitCommaSeparatedInt64s(std::string_view input);
 

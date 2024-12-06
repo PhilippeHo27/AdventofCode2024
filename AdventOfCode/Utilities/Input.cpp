@@ -92,6 +92,12 @@ namespace Utilities
 		return Utilities::SplitStringAndTransform<int>(input, ",", [](std::string_view token) { return std::stoi(std::string{ token }); });
 	}
 
+	std::vector<int> SplitLimiterSeparatedInt32s(std::string_view input, std::string_view delimiter)
+	{
+		return Utilities::SplitStringAndTransform<int>(
+			input, delimiter, [](std::string_view token) { return std::stoi(std::string{ token }); });
+	}
+
 	std::vector<int64_t> SplitCommaSeparatedInt64s(std::string_view input)
 	{
 		return Utilities::SplitStringAndTransform<int64_t>(

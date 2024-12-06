@@ -148,27 +148,3 @@ namespace Puzzle02B
 
 
 } // namespace Puzzle02B
-
-// std::cout << " i should pass here 4 times " << std::endl;
-
-
-// if (isAscending)
-//{
-//	std::cout << " im Ascending! again " << std::endl;
-//	for (auto v : values)
-//	{
-//		std::cout << v << " ";
-//	}
-//	std::cout << std::endl;
-// }
-
-// if (isDescending)
-//{
-//	std::cout << " im Descending! again " << std::endl;
-//	for (auto v : values)
-//	{
-//		std::cout << v << " ";
-//	}
-//	std::cout << std::endl;
-
-//}
