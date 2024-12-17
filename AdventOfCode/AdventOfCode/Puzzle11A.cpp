@@ -16,8 +16,9 @@ namespace Puzzle11A
 
 	void PrintSolution(const std::filesystem::path& inputFile, bool shouldRender)
 	{
-		auto input = ReadInput(inputFile);
+		//auto input = ReadInput(inputFile);
+		auto grid = ReadAllLinesInFileAsGrid(inputFile);
 
-		std::cout << "Puzzle11A not yet solved!";
+		std::cout << grid << std::endl;
 	}
 } // namespace Puzzle11A

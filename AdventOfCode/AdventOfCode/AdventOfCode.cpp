@@ -69,7 +69,7 @@ const std::vector<std::vector<std::vector<std::filesystem::path>>> puzzleSampleP
 		{ "Puzzle07SampleA.input" },
 	},
 	{
-		{ "Puzzle08SampleA.input", "Puzzle08SampleB.input" },
+		{ "Puzzle08SampleA.input" },
 		{ "Puzzle08SampleC.input" },
 	},
 	{
@@ -77,8 +77,8 @@ const std::vector<std::vector<std::vector<std::filesystem::path>>> puzzleSampleP
 		{ "Puzzle09SampleA.input" },
 	},
 	{
-		{ "Puzzle10SampleA.input", "Puzzle10SampleB.input" },
-		{ "Puzzle10SampleC.input", "Puzzle10SampleD.input", "Puzzle10SampleE.input" },
+		{ "Puzzle10SampleA.input"},
+		{ "Puzzle10SampleA.input"},
 	},
 	{
 		{ "Puzzle11SampleA.input" },

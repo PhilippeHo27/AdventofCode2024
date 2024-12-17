@@ -16,8 +16,13 @@ namespace Puzzle10A
 
 	void PrintSolution(const std::filesystem::path& inputFile, bool shouldRender)
 	{
-		auto input = ReadInput(inputFile);
+		auto grid = ReadAllLinesInFileAsGrid(inputFile);
 
-		std::cout << "Puzzle10A not yet solved!";
+		std::cout << grid << std::endl;
+
+		auto starts = std::count(grid.begin(), grid.end(), '0');
+
+		std::cout << starts << std::endl;
+
 	}
 } // namespace Puzzle10A
